@@ -1,0 +1,71 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #150F31;
+}
+.nav-left{
+    padding-left: 30px;
+}
+.nav-left img{
+    width: 260px;
+}
+.nav-right{
+    justify-content: center;
+    align-items: center;
+}
+.nav-item-right{
+    display: flex;
+    padding-right: 60px;
+    padding-top: 28px;
+}
+.nav-right ul li{
+    justify-content: center;
+    align-items: center;
+    margin-left: 40px;
+}
+.nav-right ul li a{
+    color: white;
+    font-size: 18px;
+}
+.tentang-kami{
+    margin: 50px;
+}
+.tentang-kami h1{
+    text-align: center;
+    padding-bottom: 30px;
+    font-size: 45px;
+}
+.tentang-kami h5{
+    text-align: justify;
+    font-size: 19px;
+    padding-bottom: 30px;
+}
+.tim-kami h1{
+    text-align: center;
+    margin: 0 0 30px 0;
+}
+.profil-kami{
+    display: flex;
+    justify-content: center;
+    /* margin: 0 50px 0 50px; */
+}
+.profil{
+    width: 20%;
+    margin-left: 20px;
+}
+.profil img{
+    width: 250px;
+}
+.profil h3{
+    padding: 20px 0 20px 0;
+}
+.profil h5{
+    padding: 0 0 20px 0;
+}

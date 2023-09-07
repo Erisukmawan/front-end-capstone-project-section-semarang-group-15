@@ -1,0 +1,118 @@
+body {
+    margin: 70px 0px 0px 0px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+.tentang-kami{
+    /* margin: 50px; */
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index: -1;
+}
+.tentangkami-title,.timkami-title {
+    margin-bottom: 15px;
+    align-items: center;
+    /* padding: 20px; */
+    text-align: center;
+    color: #F3AC46;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.tentangkami-label{
+    text-align: justify;
+    font-size: 19px;
+    padding-bottom: 30px;
+}
+.tim-kami {
+    margin: 10px 50px 50px 50px;
+    justify-content: center;
+    justify-content: space-between;
+    /* text-align: ; */
+    /* display: inline;   */
+}
+.tim-container {
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(3, auto);
+    gap: 23px;
+}
+
+.tim-card {
+    position: relative;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00000033;
+}
+
+.tim-card:hover {
+    background-color: #f3c88c;
+    .button-whatsapp{
+        display: inline;
+        /* position: absolute; */
+        /* background-color: #26e04f; */
+    }
+    .button-whatsapp:hover{
+        background-color: cadetblue;
+    }
+}
+
+.tim-img img {
+    border-radius: 20px;
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.tim-text {
+    font-size: 18px;
+    /* font-style: italic; */
+    text-align: center;
+}
+
+.tim-program {
+    font-size: 14px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.tim-author {
+    font-size: 18px;
+    padding-top: 30px;
+    margin-bottom: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+.connect-sosmed{
+    text-align: center;
+    /* display: none; */
+}
+.button-whatsapp{
+    border: none;
+    background-color: #1eb940;
+    color: white;
+    padding: 15px;
+    border-radius: 50px;
+    font-size: 15px;
+    display:none;
+}
+@media screen and (max-width :980px) {
+    .tim-container {
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: repeat(2, auto);
+            gap: 23px;
+        }
+}
+@media screen and (max-width :540px) {
+    .tim-container {
+            display: grid;
+            margin: 0 auto;
+            grid-template-columns: repeat(1, auto);
+            gap: 23px;
+        }
+}

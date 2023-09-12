@@ -97,19 +97,19 @@ body{
     
     font-size: xx-large;
     margin-bottom: 4px;
-    margin-left: 2rem;
+    margin-left: 3rem;
     margin-right: 40%;
 }
 
 .hero-content p {
     font-size: medium;
     margin-bottom: 2rem;
-    margin-left: 2rem;
+    margin-left: 3rem;
     margin-right: 40%;
 }
 
 .btn-go {
-    margin-left: 2rem;
+    margin-left: 3rem;
     display: inline-block;
     background-color: #F3AC46;
     color: black;
@@ -125,6 +125,30 @@ body{
 .btn-go:hover {
     background-color: #3067ce;
     color: #fff;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 12px;
+    color: rgb(255, 254, 224);
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+    color:rgb(0, 0, 0);
 }
 
 @-webkit-keyframes mover {
@@ -228,6 +252,7 @@ body{
     background-color: #4A55A2;
     color: white;
 }
+
 /* testimoni */
 .testimoni {
     padding: 10px;
@@ -530,6 +555,12 @@ iframe {
         font-size: 15px;
         margin-right: 0px;
 
+    }
+    .next, .prev {
+        position: absolute;
+        top: 90%;
+        width: auto;
+        padding: 8px;
     }
     /* testimoni  */
     .testimoni .testimoni-title {

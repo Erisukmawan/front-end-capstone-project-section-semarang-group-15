@@ -22,6 +22,7 @@ body {
     font-weight: bold;
 }
 
+
 .tentangkami-label{
     text-align: justify;
     font-size: 19px;
@@ -31,8 +32,6 @@ body {
     margin: 10px 50px 50px 50px;
     justify-content: center;
     justify-content: space-between;
-    /* text-align: ; */
-    /* display: inline;   */
 }
 .tim-container {
     display: grid;
@@ -107,6 +106,12 @@ body {
             grid-template-columns: repeat(2, auto);
             gap: 23px;
         }
+    .timkami-title,  .tentangkami-title {
+        font-size: 30px;
+    }
+    .tentangkami-label {
+        font-size: medium;
+    }
 }
 @media screen and (max-width :540px) {
     .tim-container {
@@ -115,4 +120,10 @@ body {
             grid-template-columns: repeat(1, auto);
             gap: 23px;
         }
+    .timkami-title,  .tentangkami-title {
+        font-size: 25px;
+    }
+    .tentangkami-label {
+        font-size: small;
+    }
 }

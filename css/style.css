@@ -310,11 +310,11 @@ body{
     font-weight: bold;
     text-align: center;
 }
+/* contact */
 .contact{
     background-color: #F8C986;
     padding: 5px 20px 45px 20px;
 }
-/* contact */
 .content-contact {
     padding: 10px;
 }
@@ -343,8 +343,10 @@ body{
     border-radius: 10px;
     background-color: #011C2B;
     color: white;
+    padding-top: 30px;
 }
 .content-left {
+    
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -408,11 +410,21 @@ iframe {
 .footer{
     background-color: #272A5A;
     color: white;
-    padding: 20px;
+    padding: 0px 20px 10px 20px;
 
 }
+.footer-sosmed{
+    margin-top: -15px;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    /* justify-content: stretch; */
+}
+.icon a i{
+    font-size: 30px;
+    padding: 0px 10px 0px 0px;
+}
 .content-footer{
-    padding: 50px 50px 8px 50px;
+    padding: 20px 50px 20px 50px;
     display: grid;
     grid-template-columns: repeat(3, auto);
     gap: 40px;
@@ -426,12 +438,12 @@ iframe {
         font-size: 20px;
     }
 }
-.content-center-footer{
+.content-center-footer, a{
     text-align: center;
     font-size: 18px;
     
 }
-.content-center-footer p {
+.content-center-footer p{
     padding-top: -80px;
     margin-bottom: -10px
 }
@@ -446,7 +458,7 @@ iframe {
 }
 .content-bottom{
     text-align: center;
-    margin-bottom: -20px;
+    margin-bottom: 3px;
     
 }
 
@@ -473,16 +485,19 @@ iframe {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #000000;
-        position: absolute;
-        top: 100%;
-        left: 0;
+        text-align: center;
+        background-color: #21184A;
+        position:absolute;
+        top: 70%;
         width: 100%;
-        padding: 1rem;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
     }
 
     .nav-active li {
-        margin: 1rem 0;
+        margin: 10px 0;
+        font-size: 20px;
     }
     /* hero */
     .hero-content h1 {
@@ -599,51 +614,58 @@ iframe {
         margin-top: 3px;
         margin-bottom: 5px;
     }
-        /* footer */
-        .footer {
-            padding-bottom: 20px;
+    /* footer */
+    .footer {
+        padding-bottom: 20px;
+    }
+    .footer-sosmed{
+        margin-top: -10px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+    }
+    .icon a i{
+        font-size: 20px;
+        padding: 0px 10px 0px 0px;
+    }
+    .content-footer {
+        padding: 50px 10px 10px 10px;
+        grid-template-columns: repeat(1, auto);
+        text-align: center;
+        gap: 0px;
+    }
+    
+    .content-left-footer {
+        .img-footer {
+            width: 250px;
+            margin-bottom: -20px;
         }
     
-        .content-footer {
-            padding: 50px 10px 10px 10px;
-            grid-template-columns: repeat(1, auto);
-            text-align: center;
-            gap: 0px;
-        }
-    
-        .content-left-footer {
-            .img-footer {
-                width: 250px;
-                margin-bottom: -20px;
-            }
-    
-            .title {
-                font-size: 14px;
-            }
-        }
-    
-        .content-center-footer {
-            text-align: center;
-            font-size: 16px;
-            margin-bottom: 20px;
-    
-        }
-    
-        .content-center-footer h3 a, .content-right-footer h3 a{
-        font-size: medium;
-        }
-        .content-right-footer, p, a{
-            text-align: center;
+        .title {
             font-size: 14px;
-            
         }
+    }
+    
+    .content-center-footer {
+        text-align: center;
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .content-center-footer h3 a, .content-right-footer h3 a{
+    font-size: medium;
+    }
+    .content-right-footer, p, a{
+        text-align: center;
+        font-size: 14px;
         
-    
-        .content-bottom {
-            text-align: center;
-            font-size: 14px;
-    
-        }
+    }
+    .content-bottom {
+        text-align: center;
+        font-size: 14px;
+
+    }
     
 }
 /* responsive phone */
@@ -669,16 +691,19 @@ iframe {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: #000000;
-        position: absolute;
-        top: 100%;
-        left: 0;
+        text-align: center;
+        background-color: #21184A;
+        position:absolute;
+        top: 70%;
         width: 100%;
-        padding: 1rem;
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
     }
 
     .nav-active li {
-        margin: 1rem 0;
+        margin: 10px 0;
+        font-size: 20px;
     }
     /* hero */
     .hero {
@@ -836,7 +861,17 @@ iframe {
     .footer{
         padding-bottom: 20px;
     }
-    
+    .footer-sosmed{
+        margin-top: -10px;
+        text-align: center;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        justify-content: center;
+    }
+    .icon a i{
+        font-size: 18px;
+        padding: 0px 10px 0px 0px;
+    }
     .content-footer{
         padding: 50px 10px 10px 10px;
         grid-template-columns: repeat(1, auto);

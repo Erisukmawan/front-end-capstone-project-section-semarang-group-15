@@ -741,7 +741,7 @@ iframe {
     }
     .next, .prev {
         position: absolute;
-        top: 60%;
+        top: 40%;
         width: auto;
         padding: 8px;
     }

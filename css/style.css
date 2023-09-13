@@ -130,7 +130,7 @@ body{
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 40%;
+    top: 50%;
     width: auto;
     padding: 12px;
     color: rgb(255, 254, 224);
@@ -138,7 +138,8 @@ body{
     font-size: 16px;
     border-radius: 0 3px 3px 0;
     user-select: none;
-    background-color: rgba(0, 0, 0, 0.8);
+    border: none;
+    background-color: #5e5846;
 }
 
 .next{
@@ -190,9 +191,10 @@ body{
 
 .all-program {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(3, auto);
     bottom: 130px;
     margin: 0 30px 0 30px;
+    gap: 20px;
 }
 
 .program-item {
@@ -226,7 +228,9 @@ body{
 .price-program p, h2{
     margin-bottom: -10px;
 }
-
+.benefit-program h3 {
+    text-align: center;
+}
 .benefit-program {
     padding: 0 15px 0 15px;
 }
@@ -251,6 +255,100 @@ body{
 .button-daftar:hover{
     background-color: #4A55A2;
     color: white;
+}
+/* modal daftar */
+.modalDaftar {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+
+/* Modal Content */
+.modalContent {
+    background-color: #C5DFF8;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    
+}
+.modal-content-left{
+    /* border: 1 solid black; */
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 80%;
+            
+
+}
+.modal-content-left img{
+    width: 80%;
+}
+
+.modal-content-right {
+    border: 1 solid black;
+    width: 100%;
+    color: #272A5A;
+    border-left: 2px solid black;
+        height: 100%;
+    /* text-align: center; */
+}
+.modal-label {
+    display: none;
+}
+.modal-content-right h1{
+    text-align: center;
+}
+.label-input {
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: -1px;
+}
+
+.form-input {
+    margin-top: 5px;
+    width: 90%;
+    /* text-align: right; */
+    padding-left: 4px;
+    margin-left: 20px;
+    /* border: none; */
+    border-radius: 30px;
+    border-color: #aaaaaa;
+    height: 20px;
+}
+.modal-button-daftar {
+    background-color: #F3AC46;
+    width: 92%;
+    height: 35px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 /* testimoni */
@@ -521,6 +619,14 @@ iframe {
         font-size: 20px;
     }
     /* hero */
+    .hero .next, .hero .prev {
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 8px;
+        border: none;
+        background-color: #5e5846;
+    }
     .hero-content h1 {
     
     font-size: x-large;
@@ -561,6 +667,11 @@ iframe {
         top: 90%;
         width: auto;
         padding: 8px;
+    }
+    /* program */
+    .benefit-program p{
+        text-align: left;
+        justify-content: left;
     }
     /* testimoni  */
     .testimoni .testimoni-title {
@@ -794,7 +905,7 @@ iframe {
         text-align: center;
         color: #fff;
         max-width: 400px;
-        margin: 0 auto;
+        margin: auto;
     }
 
     .btn-go {
@@ -838,6 +949,61 @@ iframe {
     .testimoni-author {
         font-size: 14px;
         padding-top: 17px;
+    }
+
+    /* Modal Content */
+    .modalContent {
+        background-color: #C5DFF8;
+        margin: auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+        
+    }
+    .modal-content-left{
+        display: none;
+                
+
+    }
+
+    .modal-content-right {
+        border: 1 solid black;
+        width: 100%;
+        color: #272A5A;
+        border-left: none;
+            height: 0%;
+    }
+    .modal-content-right h1{
+        text-align: center;
+    }
+    .label-input {
+        text-align: left;
+        margin-left: 20px;
+        margin-bottom: -1px;
+    }
+    .modal-label{
+        display: block;
+        margin: -10px 0px;
+    }
+
+    .form-input {
+        margin-top: 5px;
+        width: 90%;
+        padding-left: 4px;
+        margin-left: 20px;
+        border-radius: 30px;
+        border-color: #aaaaaa;
+        height: 20px;
+    }
+    .modal-button-daftar {
+        background-color: #F3AC46;
+        width: 92%;
+        height: 35px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin: 20px;
     }
 
     /* contact */

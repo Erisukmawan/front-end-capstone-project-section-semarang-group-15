@@ -89,7 +89,7 @@
                     <hr>
                 </div>
                 <div class="button-program">
-                    <button type="submit" class="button-daftar"><b>Daftar Sekarang</b></button>
+                    <button  onclick="btnDaftar()" id="buttonDaftar" class="button-daftar"><b>Daftar Sekarang</b></button>
                 </div>
             </div>
             <div class="program-item">
@@ -115,7 +115,7 @@
                     <hr>
                 </div>
                 <div class="button-program">
-                    <button type="submit" class="button-daftar"><b>Daftar Sekarang</b></button>
+                    <button  onclick="btnDaftar()" id="buttonDaftar" class="button-daftar"><b>Daftar Sekarang</b></button>
                 </div>
             </div>
             <div class="program-item">
@@ -141,7 +141,7 @@
                     <hr>
                 </div>
                 <div class="button-program">
-                    <button type="submit" class="button-daftar"><b>Daftar Sekarang</b></button>
+                    <button  onclick="btnDaftar()" id="buttonDaftar" class="button-daftar"><b>Daftar Sekarang</b></button>
                 </div>
             </div>
             <div class="program-item">
@@ -167,11 +167,89 @@
                     <hr>
                 </div>
                 <div class="button-program">
-                    <button type="submit" class="button-daftar"><b>Daftar Sekarang</b></button>
+                    <button  onclick="btnDaftar()" id="buttonDaftar" class="button-daftar"><b>Daftar Sekarang</b></button>
                 </div>
             </div>
-            
-          
+            <div class="program-item">
+                <div class="card-title">
+                    <h1>Pre-TOEFL</h1>
+                </div>
+                <div class="price-program">
+                    <p>Mulai Dari</p>
+                    <h2><b>Rp.390.000/bln</b></h2>
+                    <h5>(Program Minimal 3 Bulan)</h5>
+                </div>
+                <div class="benefit-program">
+                    <h3><b>Benefit</b></h3>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Sertifikat </p>
+                    <hr>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Akses Modul Selamanya </p>
+                    <hr>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> 3x Pertemuan seminggu </p>
+                    <hr>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Waktu Fleksibel </p>
+                    <hr>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Quiz perhari </p>
+                    <hr>
+                </div>
+                <div class="button-program">
+                    <button onclick="btnDaftar()" id="buttonDaftar" class="button-daftar"><b>Daftar Sekarang</b></button>
+                </div>
+            </div>
+            <div class="program-item">
+                <div class="card-title">
+                    <h1>Pre-IELTS</h1>
+                </div>
+                <div class="price-program">
+                    <p>Mulai Dari</p>
+                    <h2><b>Rp.390.000/bln</b></h2>
+                    <h5>(Program Minimal 3 Bulan)</h5>
+                </div>
+                <div class="benefit-program">
+                    <h3><b>Benefit</b></h3>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Sertifikat </p>
+                    <hr>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Akses Modul Selamanya </p>
+                    <hr>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> 3x Pertemuan seminggu </p>
+                    <hr>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Waktu Fleksibel </p>
+                    <hr>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Quiz perhari </p>
+                    <hr>
+                </div>
+                <div class="button-program">
+                    <button onclick="btnDaftar()" id="buttonDaftar" class="button-daftar"><b>Daftar Sekarang</b></button>
+                </div>
+            </div>
+            <div id="modalDaftar" class="modalDaftar">
+                <!-- Modal content -->
+                <div class="modalContent">
+                    <div class="modal-content-left">
+                        <img src="images/Logodark.svg" alt="">
+                        <p>Silahkan kenalkan diri kamu terlebih dahulu ya.
+                        Admin Languago akan segera menguhubungi kamu.</p>
+                    </div>
+                    <div class="modal-content-right">
+                        <span class="close">&times;</span>
+                        <h1>Formulir Pendaftaran</h1>
+                        <p class="modal-label">Silahkan kenalkan diri kamu terlebih dahulu ya.
+                            Admin Languago akan segera menguhubungi kamu.</p>
+                        <form action="" method="post">
+                            <h4 class="label-input">Nama</h4>
+                            <input type="text" class="form-input" required>
+                            <h4 class="label-input">Email</h4>
+                            <input type="email" class="form-input" required>
+                            <h4 class="label-input">Nomor Telephone</h4>
+                            <input type="number" class="form-input" required>
+                            <h4 class="label-input">Program</h4>
+                            <input type="text" class="form-input" required>
+                            <button type="submit" class="modal-button-daftar">Daftar Program</button>
+                            <br>
+                        </form>
+                    </div>
+                </div>
+            </div>
     </section>
     <!-- section testimoni -->
     <section class="testimoni" id="testimoni">
@@ -290,17 +368,14 @@
                 <div class="contact-right">
                     <div class="content-right">
                         <form action="index.html" method="post">
-                            <label class="text-contact">Nama</label>
-                            <input type="text" class="form-control nama" name="nama" placeholder="Username"
-                                aria-label="Nama" aria-describedby="basic-addon1">
+                            <label class="text-contact" for="Nama">Nama</label>
+                            <input type="text" class="form-control nama" name="nama" placeholder="Name" required>
                             <label class="text-contact" for="Email">Email</label>
-                            <input type="email" class="form-control email" name="email" placeholder="Email"
-                                aria-label="Email">
-                            <label class="text-contact">Pesan</label>
-                            <textarea name="pesan" id="" rows="10" class="form-control"
+                            <input type="email" class="form-control email" name="email" placeholder="Email" required>
+                            <label class="text-contact" for="Pesan">Pesan</label>
+                            <textarea required name="pesan" id="" rows="10" class="form-control"
                                 placeholder="Tuliskan Pesan Anda Disini"></textarea>
-                            <button type="button" class="kirim">KIRIM <i class="fa fa-paper-plane"
-                                    aria-hidden="true"></i></button>
+                            <button type="submit" class="kirim">KIRIM <i class="fa fa-paper-plane"></i></button>
                         </form>
                     </div>
                 </div>
@@ -345,7 +420,7 @@
             <h3>&copy; Languago 2023, All Rights Reserved</h3>
         </div>
     </footer>
-    <script src="js/style.js"></script>
+    <script src="js/script.js"></script>
     <script src="https://kit.fontawesome.com/8cdfa6da34.js" crossorigin="anonymous"></script>
 </body>
 

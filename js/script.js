@@ -6,6 +6,25 @@ navbar_button.addEventListener('click', () => {
     navLinks.classList.toggle('nav-active');
 });
 
+//hero
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("hero-content");
+  if (n > x.length) { slideIndex = 1 }
+  if (n < 1) { slideIndex = x.length };
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  x[slideIndex - 1].style.display = "block";
+}
+
 // faq
 let acc = document.getElementsByClassName("accordion");
 let i;
@@ -24,21 +43,21 @@ for (i = 0; i < acc.length; i++) {
     });
 }
 
-//hero
-var slideIndex = 1;
-showDivs(slideIndex);
+// modaldaftar
+var modal = document.getElementById("modalDaftar");
+var btn = document.getElementById("buttonDaftar");
+var span = document.getElementsByClassName("close")[0];
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
+function btnDaftar() {
+  console.log("muncul")
+  modal.style.display = "block";
 }
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("hero-content");
-  if (n > x.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
+span.onclick = function () {
+  
+  modal.style.display = "none";
+}
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
   }
-  x[slideIndex-1].style.display = "block";
 }

@@ -36,8 +36,8 @@ function plusDivs(n) {
 }
 
 function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("hero-content");
+  let i;
+  let x = document.getElementsByClassName("hero-content");
   if (n > x.length) { slideIndex = 1 }
   if (n < 1) { slideIndex = x.length };
   for (i = 0; i < x.length; i++) {
@@ -52,7 +52,6 @@ var btn = document.getElementById("buttonDaftar");
 var span = document.getElementsByClassName("close")[0];
 
 function btnDaftar() {
-  console.log("muncul")
   modal.style.display = "block";
 }
 span.onclick = function () {

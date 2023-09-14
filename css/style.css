@@ -130,7 +130,7 @@ body{
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: auto;
     padding: 12px;
     color: rgb(255, 254, 224);
@@ -300,9 +300,10 @@ body{
     width: 100%;
     color: #272A5A;
     border-left: 2px solid black;
-        height: 100%;
-    /* text-align: center; */
-}
+    height: 100%;
+    
+    }
+    
 .modal-label {
     display: none;
 }
@@ -313,18 +314,26 @@ body{
     text-align: left;
     margin-left: 20px;
     margin-bottom: -1px;
+    margin-top: 10px;
 }
 
 .form-input {
     margin-top: 5px;
     width: 90%;
-    /* text-align: right; */
     padding-left: 4px;
     margin-left: 20px;
-    /* border: none; */
+    border-radius: 30px;
+    border: 1px solid #aaaaaa;
+    height: 20px;
+}
+.program-select {
+    margin-top: 5px;
+    width: 92%;
+    padding-left: 5px;
+    margin-left: 20px;
     border-radius: 30px;
     border-color: #aaaaaa;
-    height: 20px;
+    height: 30px;
 }
 .modal-button-daftar {
     background-color: #F3AC46;
@@ -333,6 +342,12 @@ body{
     border-radius: 6px;
     cursor: pointer;
     margin: 20px;
+    border-radius: 20px;
+    border: none;
+}
+.modal-button-daftar:hover {
+    background-color: #21184A;
+    color: white;
 }
 
 
@@ -413,7 +428,7 @@ body{
 }
 
 .testimoni-text {
-    font-size: 18px;
+    font-size: 16px;
     font-style: italic;
     text-align: center;
 }
@@ -621,7 +636,7 @@ iframe {
     /* hero */
     .hero .next, .hero .prev {
         position: absolute;
-        top: 50%;
+        top: 45%;
         width: auto;
         padding: 8px;
         border: none;
@@ -852,7 +867,7 @@ iframe {
     }
     .next, .prev {
         position: absolute;
-        top: 40%;
+        top: 45%;
         width: auto;
         padding: 8px;
     }
@@ -969,18 +984,17 @@ iframe {
     }
 
     .modal-content-right {
-        border: 1 solid black;
         width: 100%;
         color: #272A5A;
         border-left: none;
-            height: 0%;
+        height: 0%;
     }
     .modal-content-right h1{
         text-align: center;
     }
     .label-input {
         text-align: left;
-        margin-left: 20px;
+        margin-left: 0px;
         margin-bottom: -1px;
     }
     .modal-label{
@@ -990,20 +1004,35 @@ iframe {
 
     .form-input {
         margin-top: 5px;
-        width: 90%;
+        width: 95%;
         padding-left: 4px;
-        margin-left: 20px;
+        margin-left: 0px;
         border-radius: 30px;
-        border-color: #aaaaaa;
         height: 20px;
+        border: 1px solid #aaaaaa;
     }
     .modal-button-daftar {
         background-color: #F3AC46;
-        width: 92%;
+        width: 97%;
         height: 35px;
         border-radius: 6px;
         cursor: pointer;
-        margin: 20px;
+        margin: 20px auto;
+        border-radius: 20px;
+        border: none;
+    }
+    .program-select {
+        margin-top: 5px;
+        width: 98%;
+        padding-left: 5px;
+        margin-left: 0px;
+        border-radius: 30px;
+        border-color: #aaaaaa;
+        height: 30px;
+    }
+    .modal-button-daftar:hover{
+        background-color: #21184A;
+        color: white;
     }
 
     /* contact */

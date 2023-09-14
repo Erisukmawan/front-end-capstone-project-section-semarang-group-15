@@ -6,6 +6,27 @@ navbar_button.addEventListener('click', () => {
     navLinks.classList.toggle('nav-active');
 });
 
+
+// faq
+let acc = document.getElementsByClassName("accordion");
+let icon = document.getElementById('icon');
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    let icon = this.firstElementChild;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+      icon.className = "fa fa-chevron-circle-down";
+      
+    } else {
+      panel.style.display = "block";
+      icon.className = "fa fa-chevron-circle-up";
+    }
+  });
+}
 //hero
 var slideIndex = 1;
 showDivs(slideIndex);
@@ -23,24 +44,6 @@ function showDivs(n) {
     x[i].style.display = "none";
   }
   x[slideIndex - 1].style.display = "block";
-}
-
-// faq
-let acc = document.getElementsByClassName("accordion");
-let i;
-
-for (i = 0; i < acc.length; i++) {
-    acc[i].addEventListener("click", function () {
-        this.classList.toggle("active");
-        let panel = this.nextElementSibling;
-        if (panel.style.display === "block") {
-            panel.style.display = "none";
-
-
-        } else {
-            panel.style.display = "block";
-        }
-    });
 }
 
 // modaldaftar

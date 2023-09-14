@@ -243,7 +243,19 @@
                             <h4 class="label-input">Nomor Telephone</h4>
                             <input type="number" class="form-input" required>
                             <h4 class="label-input">Program</h4>
-                            <input type="text" class="form-input" required>
+                            <select name="program" class="program-select" onchange="loadData(this.value);">
+                                <option value="Grammar" selected>Gammar</option>
+                                <option value="Reading">Reading</option>
+                                <option value="Speaking">Speaking</option>
+                                <option value="Writing">Writing</option>
+                                <option value="Pre-TOEFL">Pre-TOEFL</option>
+                                <option value="Pre-IELTS">Pre-IELTS</option>
+                            </select>
+                            <h4 class="label-input">Kelas</h4>
+                            <select name="program" class="program-select" onchange="loadData(this.value);">
+                                <option value="Online" selected>Online</option>
+                                <option value="Offline">Offline</option>
+                            </select>
                             <button type="submit" class="modal-button-daftar">Daftar Program</button>
                             <br>
                         </form>
@@ -369,7 +381,7 @@
                     <div class="content-right">
                         <form action="index.html" method="post">
                             <label class="text-contact" for="Nama">Nama</label>
-                            <input type="text" class="form-control nama" name="nama" placeholder="Name" required>
+                            <input type="text" class="form-control nama" name="nama" placeholder="Nama" required>
                             <label class="text-contact" for="Email">Email</label>
                             <input type="email" class="form-control email" name="email" placeholder="Email" required>
                             <label class="text-contact" for="Pesan">Pesan</label>

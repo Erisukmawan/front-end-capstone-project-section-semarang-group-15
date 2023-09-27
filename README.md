@@ -24,5 +24,7 @@
 	<li>FAQ - Frequently Asked Question</li>
 </ul>
 
-<h1>Link Github Pages</h1>
-https://kampus-merdeka-software-engineering.github.io/front-end-capstone-project-section-semarang-group-15
+<h1>Link</h1>
+
+- Link QA test : https://docs.google.com/spreadsheets/d/1fG3M_B-l2-tfGNrApsiL6P6wARHmIqIxG-9lRWVuy44/edit?usp=sharing
+- https://kampus-merdeka-software-engineering.github.io/front-end-capstone-project-section-semarang-group-15

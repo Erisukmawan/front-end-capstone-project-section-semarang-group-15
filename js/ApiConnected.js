@@ -10,7 +10,7 @@ async function getTestimoni() {
             for (var value of data) {
                 testiContainer.innerHTML += `<div class="testimoni-card" >
                     <div class="testimoni-img">
-                        <img src="images/${(value.foto)}" alt="Person 1">
+                        <img src="images/${(value.foto)}" alt="Person ${(value.id)}">
                     </div>
                     <div class="testimoni-author">
                         <p>${(value.nama)}</p>
@@ -28,6 +28,5 @@ async function getTestimoni() {
 }
 function renderTestimoni(data) {
     console.log(data)
-    
 }
 getTestimoni();

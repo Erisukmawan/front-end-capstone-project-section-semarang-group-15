@@ -1,6 +1,6 @@
 // Api Get Testimoni
-function getTestimoni() {
-    fetch('https://languago.up.railway.app/api/v1/testimoni', {
+async function getTestimoni() {
+    await fetch('https://languago.up.railway.app/api/v1/testimoni', {
                 headers: {
                     'Content-type': 'application/json; charset=UTF-8',
                 },

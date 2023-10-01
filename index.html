@@ -236,14 +236,14 @@
                         <p class="modal-label">Silahkan kenalkan diri kamu terlebih dahulu ya.
                             Admin Languago akan segera menguhubungi kamu.</p>
                         <form action="" method="post">
-                            <h4 class="label-input">Nama</h4>
-                            <input type="text" class="form-input" required>
-                            <h4 class="label-input">Email</h4>
-                            <input type="email" class="form-input" required>
-                            <h4 class="label-input">Nomor Telephone/ No WhatsApp</h4>
-                            <input type="tel" class="form-input" required>
-                            <h4 class="label-input">Program</h4>
-                            <select name="program" class="program-select" onchange="loadData(this.value);">
+                            <h4 class="label-input" for="Nama">Nama</h4>
+                            <input type="text" name="nama" id="Nama" class="form-input" required>
+                            <h4 class="label-input" for="email">Email</h4>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                            <h4 class="label-input" for="Tel">Nomor Telephone/ No WhatsApp</h4>
+                            <input type="tel" id="Tel" name="no_tel" class="form-input" required>
+                            <h4 class="label-input" for="program">Program</h4>
+                            <select id="program" name="nama_program"  class="program-select" onchange="loadData(this.value);">
                                 <option value="Grammar" selected>Grammar</option>
                                 <option value="Reading">Reading</option>
                                 <option value="Speaking">Speaking</option>
@@ -251,8 +251,8 @@
                                 <option value="Pre-TOEFL">Pre-TOEFL</option>
                                 <option value="Pre-IELTS">Pre-IELTS</option>
                             </select>
-                            <h4 class="label-input">Kelas</h4>
-                            <select name="program" class="program-select" onchange="loadData(this.value);">
+                            <h4 class="label-input" for="kelas">Kelas</h4>
+                            <select name="kelas" id="kelas" class="program-select" onchange="loadData(this.value);">
                                 <option value="Online" selected>Online</option>
                                 <option value="Offline">Offline</option>
                             </select>
@@ -268,93 +268,7 @@
         <div class="content-testimoni">
             <h1 class="testimoni-title">Testimoni</h1>
             <p class="testimoni-label">Apa Kata Mereka Tentang Program Kami ?</p>
-            <div class="testimoni-container">
-                <div class="testimoni-card">
-                    <div class="testimoni-img">
-                        <img src="images/av-1.svg" alt="Person 1">
-                    </div>
-                    <div class="testimoni-author">
-                        <p>Juliet Veronica</p>
-                    </div>
-                    <div class="testimoni-program">
-                        <p>Program Writing</p>
-                    </div>
-                    <div class="testimoni-text">
-                        <p>“Hanya dalam 3 bulan saya telah menguasai Gammar secara cepat, Terima Kasih”</p>
-                    </div>
-                </div>
-                <div class="testimoni-card">
-                    <div class="testimoni-img">
-                        <img src="images/av-2.svg" alt="Person 1">
-                    </div>
-                    <div class="testimoni-author">
-                        <p>Grisella Aury</p>
-                    </div>
-                    <div class="testimoni-program">
-                        <p>Program Grammar</p>
-                    </div>
-                    <div class="testimoni-text">
-                        <p>“Worth it banget! Aku jadi lancar komunikasi dengan klien luar negeriku!”</p>
-                    </div>
-                </div>
-                <div class="testimoni-card">
-                    <div class="testimoni-img">
-                        <img src="images/av-3.svg" alt="Person 1">
-                    </div>
-                    <div class="testimoni-author">
-                        <p>Jenova Keith</p>
-                    </div>
-                    <div class="testimoni-program">
-                        <p>Program Speaking</p>
-                    </div>
-                    <div class="testimoni-text">
-                        <p>“Waww! Program ini seru bangetttt. The best lah pokoknya. Jadi bisa lancar berbahasa
-                            inggris.”</p>
-                    </div>
-                </div>
-                <div class="testimoni-card">
-                    <div class="testimoni-img">
-                        <img src="images/av-4.svg" alt="Person 1">
-                    </div>
-                    <div class="testimoni-author">
-                        <p>Meylin Wang</p>
-                    </div>
-                    <div class="testimoni-program">
-                        <p>Program Reading</p>
-                    </div>
-                    <div class="testimoni-text">
-                        <p>“Program ini sangat luar biasa! Ini membantu saya memahami materi perkuliahan.”</p>
-                    </div>
-                </div>
-                <div class="testimoni-card">
-                    <div class="testimoni-img">
-                        <img src="images/av-5.svg" alt="Person 1">
-                    </div>
-                    <div class="testimoni-author">
-                        <p>Brenda Eldya</p>
-                    </div>
-                    <div class="testimoni-program">
-                        <p>Program Pre-TOEFL</p>
-                    </div>
-                    <div class="testimoni-text">
-                        <p>“Berkat program ini skor TOEFL-ku naik banget!!!”</p>
-                    </div>
-                </div>
-                <div class="testimoni-card">
-                    <div class="testimoni-img">
-                        <img src="images/av-6.svg" alt="Person 1">
-                    </div>
-                    <div class="testimoni-author">
-                        <p>Michael Bryant</p>
-                    </div>
-                    <div class="testimoni-program">
-                        <p>Program Pre-IELTS</p>
-                    </div>
-                    <div class="testimoni-text">
-                        <p>“Recommended banget sih ini buat yang mau belajar bahasa inggris. Program ini telah membantu
-                            untuk mempersiapkan IELTS”</p>
-                    </div>
-                </div>
+            <div class="testimoni-container" id="testimoniContainer">
             </div>
     </section>
     <!-- section Kontak -->
@@ -381,11 +295,11 @@
                     <div class="content-right">
                         <form action="index.html" method="post">
                             <label class="text-contact" for="Nama">Nama</label>
-                            <input type="text" class="form-control nama" name="nama" placeholder="Nama" required>
+                            <input type="text" id="Nama" class="form-control nama" name="nama" placeholder="Nama" required>
                             <label class="text-contact" for="Email">Email</label>
-                            <input type="email" class="form-control email" name="email" placeholder="Email" required>
+                            <input type="email" id="Email" class="form-control email" name="email" placeholder="Email" required>
                             <label class="text-contact" for="Pesan">Pesan</label>
-                            <textarea required name="pesan" id="" rows="10" class="form-control"
+                            <textarea required name="pesan" id="Pesan" rows="10" class="form-control"
                                 placeholder="Tuliskan Pesan Anda Disini"></textarea>
                             <button type="submit" class="kirim">KIRIM <i class="fa fa-paper-plane"></i></button>
                         </form>
@@ -433,6 +347,7 @@
         </div>
     </footer>
     <script src="js/script.js"></script>
+    <script src="js/ApiConnected.js"></script>
     <script src="https://kit.fontawesome.com/8cdfa6da34.js" crossorigin="anonymous"></script>
 </body>
 

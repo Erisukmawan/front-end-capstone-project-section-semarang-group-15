@@ -60,3 +60,83 @@ kontakForm.addEventListener('submit', function (e) {
     document.querySelector("#EmailKontak").value = "";
     document.querySelector("#PesanKontak").value = "";
 });
+
+// Post daftar Program
+const daftarProgramForm = document.querySelector('#daftarProgramForm');
+
+daftarProgramForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    let nama = document.querySelector("#Nama").value;
+    let email = document.querySelector("#email").value;
+    let telepon = document.querySelector("#Tel").value;
+    let programModal = document.querySelector("#programModal").value;
+    let kelas = document.querySelector("#kelas").value;
+
+    console.log(nama,email,telepon,programModal,kelas)
+    const url = "https://languago.up.railway.app/api/v1/daftar-program"
+    fetch(url, {
+        method: "POST",
+        body: JSON.stringify({
+            nama: nama,
+            email: email,
+            no_tel: telepon,
+            nama_program: programModal,
+            kelas: kelas,
+        }),
+        headers: {
+            'Content-type': 'application/json',
+        },
+    }).then(response => console.log(response))
+        .then(data => alert("Berhasil Terkirim"))
+        .catch(error => alert(error))
+
+    document.querySelector("#Nama").value = "";
+    document.querySelector("#email").value = "";
+    document.querySelector("#Tel").value = "";
+    document.querySelector("#programModal").value = "";
+    document.querySelector("#kelas").value = "";
+});
+
+// Api Get Program
+async function getProgram() {
+    await fetch('https://languago.up.railway.app/api/v1/program', {
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+        })
+        .then(response => response.json()).then(data => {  
+            let programContainer = document.getElementById("programContainer");
+            for (var value of data) {
+                programContainer.innerHTML += `<div class="program-item">
+                <div class="card-title">
+                    <h1>${(value.nama_program)}</h1>
+                </div>
+                <div class="price-program">
+                    <p>Mulai Dari</p>
+                    <h2><b>Rp.${(value.harga_program)}/bln</b></h2>
+                    <h5>(Program Minimal 3 Bulan)</h5>
+                </div>
+                <div class="benefit-program">
+                    <h3><b>Benefit</b></h3>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Sertifikat  </p>
+                    <hr>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Akses Modul Selamanya </p>
+                    <hr>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> 3x Pertemuan seminggu </p>
+                    <hr>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Waktu Fleksibel </p>
+                    <hr>
+                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Quiz perhari </p>
+                    <hr>
+                </div>
+                <div class="button-program">
+                    <button  onclick="btnDaftar()" id="buttonDaftar" class="button-daftar"><b>Daftar Sekarang</b></button>
+                </div>
+            </div>`;
+            }
+        })
+        .catch(error => console.log('Error Fatching Data :', error));
+}
+getProgram();
+

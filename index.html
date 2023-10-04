@@ -8,6 +8,7 @@
     <link rel="icon" type="image/svg" href="images/iconlogo.svg">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 
 <body>
@@ -39,7 +40,7 @@
         </div>
     </nav>
     <!-- hero  -->
-    <div class="hero">
+    <header class="hero">
         <div class="background">
             <div class="hero-content">
                 <img class="hero-image" src="images/Slide1.svg" alt="hero">
@@ -60,7 +61,7 @@
             <button class="prev" onclick="plusDivs(-1)">&#10094;</button>
             <button class="next" onclick="plusDivs(+1)">&#10095;</button>
         </div>
-    </div>
+    </header>
     <section class="program" id="program">
         <h1 class="program-title">Program</h1>
         <p class="program-label">Lihat Semua Program Menarik Dari Kami</p>
@@ -81,13 +82,13 @@
                         <p class="modal-label">Silahkan kenalkan diri kamu terlebih dahulu ya.
                             Admin Languago akan segera menguhubungi kamu.</p>
                         <form id="daftarProgramForm">
-                            <h4 class="label-input" for="Nama">Nama</h4>
-                            <input type="text" name="nama" id="Nama" class="form-input" required>
-                            <h4 class="label-input" for="email">Email</h4>
-                            <input type="email" id="email" name="email" class="form-input" required>
-                            <h4 class="label-input" for="Tel">Nomor Telephone/ No WhatsApp</h4>
-                            <input type="tel" id="Tel" name="no_tel" class="form-input" required>
-                            <h4 class="label-input" for="program">Program</h4>
+                            <h4 class="label-input" for="NamaModal">Nama</h4>
+                            <input type="text" name="nama" id="NamaModal" class="form-input" required>
+                            <h4 class="label-input" for="emailModal">Email</h4>
+                            <input type="email" id="emailModal" name="email" class="form-input" required>
+                            <h4 class="label-input" for="TelModal">Nomor Telephone/ No WhatsApp</h4>
+                            <input type="tel" id="TelModal" name="no_tel" class="form-input" required>
+                            <h4 class="label-input" for="programModal">Program</h4>
                             <select id="programModal" name="nama_program"  class="program-select" onchange="loadData(this.value);">
                                 <option value="Grammar" selected>Grammar</option>
                                 <option value="Reading">Reading</option>
@@ -96,8 +97,8 @@
                                 <option value="Pre-TOEFL">Pre-TOEFL</option>
                                 <option value="Pre-IELTS">Pre-IELTS</option>
                             </select>
-                            <h4 class="label-input" for="kelas">Kelas</h4>
-                            <select name="kelas" id="kelas" class="program-select" onchange="loadData(this.value);">
+                            <h4 class="label-input" for="kelasModal">Kelas</h4>
+                            <select name="kelas" id="kelasModal" class="program-select" onchange="loadData(this.value);">
                                 <option value="Online" selected>Online</option>
                                 <option value="Offline">Offline</option>
                             </select>
@@ -113,8 +114,8 @@
         <div class="content-testimoni">
             <h1 class="testimoni-title">Testimoni</h1>
             <p class="testimoni-label">Apa Kata Mereka Tentang Program Kami ?</p>
-            <div class="testimoni-container" id="testimoniContainer">
-            </div>
+            <div class="testimoni-container" id="testimoniContainer"></div>
+        </div>
     </section>
     <!-- section Kontak -->
     <section class="contact" id="kontak">
@@ -171,19 +172,19 @@
                 </div>
             </div>
             <div class="content-center-footer">
-                <h3><a href="index.html#program">Program</a></h3>
-                <p><a href="index.html#program">Grammar</a></p>
-                <p><a href="index.html#program">Reading</a></p>
-                <p><a href="index.html#program">Speaking</a></p>
-                <p><a href="index.html#program">Writing</a></p>
-                <p><a href="index.html#program">Pre-TOEFL</a></p>
-                <p><a href="index.html#program">Pre-IELTS</a></p>
+                <h3><a href="/index.html#program">Program</a></h3>
+                <p><a href="/index.html#program">Grammar</a></p>
+                <p><a href="/index.html#program">Reading</a></p>
+                <p><a href="/index.html#program">Speaking</a></p>
+                <p><a href="/index.html#program">Writing</a></p>
+                <p><a href="/index.html#program">Pre-TOEFL</a></p>
+                <p><a href="/index.html#program">Pre-IELTS</a></p>
             </div>
             <div class="content-right-footer">
-                <h3><a href="aboutus.html">Tentang Kami</a></h3>
-                <p><a href="faq.html">FAQ</a></p>
-                <p><a href="index.html#testimoni">Testimoni</a></p>
-                <p><a href="index.html#kontak">Kontak Kami</a></p>
+                <h3><a href="/aboutus.html">Tentang Kami</a></h3>
+                <p><a href="/faq.html">FAQ</a></p>
+                <p><a href="/index.html#testimoni">Testimoni</a></p>
+                <p><a href="/index.html#kontak">Kontak Kami</a></p>
                 </p>
             </div>
         </div>
@@ -194,6 +195,7 @@
     <script src="js/script.js"></script>
     <script src="js/ApiConnected.js"></script>
     <script src="https://kit.fontawesome.com/8cdfa6da34.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>

@@ -3,11 +3,7 @@ var baseURL = "https://languago.up.railway.app/api/v1/";
 
 // Api Get Program
 async function getProgram() {
-    await fetch(baseURL + 'program', {
-        headers: {
-            'Content-type': 'application/json; charset=UTF-8',
-        },
-    })
+    await fetch(baseURL + 'program')
         .then(response => response.json()).then(data => {
             let programContainer = document.getElementById("programContainer");
             for (var value of data) {
@@ -45,11 +41,7 @@ getProgram();
 
 // API Get Testimoni
 async function getTestimoni() {
-    await fetch(baseURL + 'testimoni', {
-                headers: {
-                    'Content-type': 'application/json; charset=UTF-8',
-                },
-        })
+    await fetch(baseURL + 'testimoni')
         .then(response => response.json()).then(data => {  
             let testiContainer = document.getElementById("testimoniContainer");
             for (var value of data) {
@@ -88,14 +80,15 @@ kontakForm.addEventListener('submit', async (e) => {
 
     await fetch(baseURL + 'kontak-kami', {
         method: "POST",
+        headers: {
+            'Content-type': 'application/json',
+        },
         body: JSON.stringify({
             nama: nama,
             email: email,
             isi_pesan: pesan
-        }),
-        headers: {
-            'Content-type': 'application/json',
-        },
+        })
+        
     }).then(response => response.json())
         .then(data => 
             Toastify({
@@ -138,16 +131,16 @@ daftarProgramForm.addEventListener('submit', async (e) => {
 
     fetch(baseURL + 'daftar-program', {
         method: "POST",
+        headers: {
+            'Content-type': 'application/json',
+        },
         body: JSON.stringify({
             nama: nama,
             email: email,
             no_tel: telepon,
             nama_program: program,
             kelas: kelas,
-        }),
-        headers: {
-            'Content-type': 'application/json',
-        },
+        })
     }).then(response => response.json())
         .then( () => {
             // alert(`Berhasil Terkirim`);

@@ -13,7 +13,7 @@ async function getProgram() {
                 </div>
                 <div class="price-program">
                     <p>Mulai Dari</p>
-                    <h2><b>Rp.${(value.harga_program)}/bln</b></h2>
+                    <h2><b>Rp ${(value.harga_program)}/bln</b></h2>
                     <h5>(Program Minimal 3 Bulan)</h5>
                 </div>
                 <div class="benefit-program">
@@ -62,9 +62,6 @@ async function getTestimoni() {
             }
         })
         .catch(error => console.log('Error Fatching Data :', error));
-}
-function renderTestimoni(data) {
-    console.log(data)
 }
 getTestimoni();
 

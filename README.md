@@ -26,5 +26,5 @@
 
 <h1>Link</h1>
 
-- Github Pages : https://kampus-merdeka-software-engineering.github.io/front-end-capstone-project-section-semarang-group-15
+- Github Pages : https://kampus-merdeka-software-engineering.github.io/FE-Semarang-15/
 - QA test : https://docs.google.com/spreadsheets/d/1fG3M_B-l2-tfGNrApsiL6P6wARHmIqIxG-9lRWVuy44/edit?usp=sharing

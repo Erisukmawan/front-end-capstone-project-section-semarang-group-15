@@ -1,5 +1,5 @@
 // Define link API from Railway Server
-var baseURL = "https://languago.up.railway.app/api/v1/";
+var baseURL = "https://be-semarang-15-production.up.railway.app/api/v1/";
 
 // Api Get Program
 async function getProgram() {

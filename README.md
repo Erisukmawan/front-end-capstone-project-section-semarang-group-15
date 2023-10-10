@@ -27,4 +27,5 @@
 <h1>Link</h1>
 
 - Github Pages : https://kampus-merdeka-software-engineering.github.io/FE-Semarang-15/
+- Link Demo : https://languago.up.railway.app/
 - QA test : https://docs.google.com/spreadsheets/d/1fG3M_B-l2-tfGNrApsiL6P6wARHmIqIxG-9lRWVuy44/edit?usp=sharing

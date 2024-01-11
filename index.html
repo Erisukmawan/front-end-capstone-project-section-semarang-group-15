@@ -147,33 +147,6 @@
                     <button  onclick="btnDaftar()" id="buttonDaftar" class="button-daftar"><b>Daftar Sekarang</b></button>
                 </div>
             </div>
-
-            <div class="program-item">
-                <div class="card-title">
-                    <h1>GRAMMER</h1>
-                </div>
-                <div class="price-program">
-                    <p>Mulai Dari</p>
-                    <h2><b>Rp 2.500.000/bln</b></h2>
-                    <h5>(Program Minimal 3 Bulan)</h5>
-                </div>
-                <div class="benefit-program">
-                    <h3><b>Benefit</b></h3>
-                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Sertifikat  </p>
-                    <hr>
-                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Akses Modul Selamanya </p>
-                    <hr>
-                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> 3x Pertemuan seminggu </p>
-                    <hr>
-                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Waktu Fleksibel </p>
-                    <hr>
-                    <p><i class="fa fa-check-circle-o" aria-hidden="true"></i> Quiz perhari </p>
-                    <hr>
-                </div>
-                <div class="button-program">
-                    <button  onclick="btnDaftar()" id="buttonDaftar" class="button-daftar"><b>Daftar Sekarang</b></button>
-                </div>
-            </div>
         </div>
             <div id="modalDaftar" class="modalDaftar">
                 <!-- Modal content -->
@@ -221,7 +194,22 @@
         <div class="content-testimoni">
             <h1 class="testimoni-title">Testimoni</h1>
             <p class="testimoni-label">Apa Kata Mereka Tentang Program Kami ?</p>
-            <div class="testimoni-container" id="testimoniContainer"></div>
+            <div class="testimoni-container" id="testimoniContainer">
+                <div class="testimoni-card" >
+                    <div class="testimoni-img">
+                        <img src="images/${(value.foto)}" alt="Person ${(value.id)}">
+                    </div>
+                    <div class="testimoni-author">
+                        <p>Jhonson</p>
+                    </div>
+                    <div class="testimoni-program">
+                        <p>Reading</p>
+                    </div>
+                    <div class="testimoni-text">
+                        <p>“Sangat Keren sekali”</p>
+                    </div>
+                </div>
+            </div>
             
         </div>
     </section>
